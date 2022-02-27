@@ -1,0 +1,50 @@
+<div class="_body">
+    <div class="main_container">
+        <div class="form_area">
+            <form (ngSubmit)="onSubmit()" [formGroup]="profileForm">
+                <p>
+                    <label for="firstName">Fisrt Name: </label>
+                    <input type="text" id="first_name_input" name="fisrtName" formControlName="firstName">
+                </p>
+                <br>
+                <p>
+                    <label for="lastName">Last Name: </label>
+                    <input type="text" id="last_name_input" name="lastName" formControlName="lastName">
+                </p>
+                <br>
+                <p>
+                    <label for="age">Age: </label>
+                    <input type="number" id="age_input" name="age" formControlName="age">
+                </p>
+                <br>
+                <div>
+                    <label for="gender">Gender: </label>
+                    <select formControlName="gender">
+                        <option label="select gender"></option>
+                        <option *ngFor="let i of genders" value="i">
+                            {{i}}
+                        </option>
+                    </select>
+                </div>
+                <br>
+                <p>
+                    <label for="phone">Phone Number: </label>
+                    <input type="text" id="phone_input" name="phone" formControlName="phone">
+                </p>
+                <!--<br>
+                <div>
+                    <label for="location_share">Are you willing to share your location? </label>
+                    <input type="radio" name="location_share" formControlName="location_share" value="yes">Yes
+                    <input type="radio" name="location_share" formControlName="location_share" value="no">No
+                </div>-->
+                <button type="submit" class="button">submit</button>
+                <div class="button_container">
+                    <a routerLink="">
+                        <div class="func_img back_button"></div>
+                    </a>
+                </div>
+            </form>
+        </div>
+        {{profileForm.status}}
+    </div>
+</div>
