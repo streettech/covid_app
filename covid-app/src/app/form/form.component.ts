@@ -14,11 +14,13 @@ export class FormComponent implements OnInit {
     lastName: ['', Validators.required],
     age: [, Validators.required],
     gender: ['', Validators.required],
-    phone: ['', Validators.required],
-    location_share: ['']
+    phone: ['', Validators.required]
+    //location_share: ['']
   });
 
   public genders = ['male', 'female', 'trans', 'queer', 'other'];
+
+  public validate = false;
 
   constructor(private fb: FormBuilder) { }
 
@@ -27,6 +29,13 @@ export class FormComponent implements OnInit {
 
   public onSubmit(): void {
     console.warn('Your order has been submitted');
+  }
+
+  public onClick(): void {
+    if (this.validate) {
+      
+    }
+    console.warn("clicked")
   }
 
 }

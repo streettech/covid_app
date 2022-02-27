@@ -37,7 +37,12 @@
                     <input type="radio" name="location_share" formControlName="location_share" value="yes">Yes
                     <input type="radio" name="location_share" formControlName="location_share" value="no">No
                 </div>-->
-                <button type="submit" class="button">submit</button>
+                <!--<button type="submit" class="button">submit</button>-->
+                <div class="button_container">
+                    <a routerLink="/questions" *ngIf="profileForm.valid">
+                        <div (click)="onClick()" class="func_img forward_button"></div>
+                    </a>
+                </div>
                 <div class="button_container">
                     <a routerLink="">
                         <div class="func_img back_button"></div>
@@ -45,6 +50,5 @@
                 </div>
             </form>
         </div>
-        {{profileForm.status}}
     </div>
 </div>
