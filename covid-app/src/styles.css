@@ -1,18 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
-
+@font-face {
+    font-family: Roboto;
+    src: url(src/assets/fonts/Roboto/Roboto-Light.ttf)
+ }
 html {
     margin: 0;
     padding: 0;
+    position: relative;
+    background-color: bisque;
 }
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif; 
     color: #4d4d4d;
+    text-align: center;
 }
 a {
     text-decoration: none;
 }
 a:hover {
     color: green;
+}
+._body {
+    display: block;
+    position: relative;
+    z-index: 15;
 }
 .func_img {
     width: 50px;

@@ -1,0 +1,41 @@
+h1 {
+    font-size: 45px;
+}
+h1, p {
+    font-family: Roboto;
+}
+._body {
+    height: 100vh;
+    width: auto;
+}
+.main_container {
+    padding-top: 30vh;
+}
+.main_container h1 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.main_container p {
+    margin-top: 0;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+.body_container h2 {
+    font-family: cursive;
+    font-weight: 50;
+}
+._shape {
+    height: 300px;
+    width: 300px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -80%);
+    position: absolute;
+    background-color: rgba(216, 112, 147, 0.4);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    z-index: -1;
+}
+.button_container {
+    position: relative;
+    width: auto;
+}

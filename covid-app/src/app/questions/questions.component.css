@@ -1,0 +1,21 @@
+h1, h2 {
+    margin: 0;
+}
+h1 {
+    font-family: Roboto;
+    font-size: 40px;
+}
+h2 {
+    font-family: cursive;
+    font-size: 28px;
+    font-weight: 100;
+}
+._body {
+    height: 100vh;
+}
+.main_container {
+    padding-top: 20vh;
+}
+.head_container {
+    padding-bottom: 40px;
+}
